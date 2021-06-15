@@ -1,28 +1,31 @@
-package com.yousef.firstproject;
+package com.yousef.swa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
 @SpringBootApplication
 @RestController
-public class Ameen1Application {
-	
+public class ControllerCodingApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(Ameen1Application.class, args);
+		SpringApplication.run(ControllerCodingApplication.class, args);
 	}
-	@RequestMapping("/coding")
+	@RequestMapping("/dojo")
 	public String coding() {
-		return "HelloCodingDojo";
+		return "theDojoisawsome";
 	}
-	@RequestMapping("/coding/python")
+	@RequestMapping("/burbank-dojo")
 	public String python() {
-		return "Python/Django was awesome!";
+		return "Burbank Dojo is located in Southern California!";
 	}
-	@RequestMapping("/coding/java")
+	@RequestMapping("/san-jose")
 	public String java() {
-		return "Java/Spring is better!";
+		return "SJ dojo is the headquarters";
 	}
 
 }
+
+
